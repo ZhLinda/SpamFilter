@@ -1,0 +1,34 @@
+1：
+10000条数据（9000:1000），linear核，PCA降维
+
+训练集测试结果：
+	The best parameters are {'C': 10.0} with a score of 0.98
+			precision    recall  f1-score   support
+
+				0       1.00      1.00      1.00      8128
+			    1       1.00      1.00      1.00       872
+
+	  avg / total       1.00      1.00      1.00      9000
+
+训练集交叉验证结果：
+	[ 0.88510941  0.89187081  0.88793396  0.88221858  0.8960664 ]
+	Accuracy: 0.89 (+/- 0.01)
+	
+	
+2:
+5000条数据（4500:500），linear核，自主挑选3006条特征
+
+训练集测试结果；
+	The best parameters are {'C': 1000.0} with a score of 0.99
+
+测试集测试结果：
+             precision    recall  f1-score   support
+
+        0.0       1.00      1.00      1.00       451
+        1.0       1.00      0.96      0.98        49
+
+avg / total       1.00      1.00      1.00       500
+
+混淆矩阵（TP, FP, TN, FN)
+[[451   0]
+ [  2  47]]
